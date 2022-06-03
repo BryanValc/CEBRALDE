@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Permanent%20Marker" rel="stylesheet">
+	<script>
+		function ocultarTodo(){
+			document.getElementById("imglogo").style.display = "none";
+			document.getElementById("usrAl").style.display = "none";
+			document.getElementById("usrBa").style.display = "none";
+			document.getElementById("usrCa").style.display = "none";
+			document.getElementById("usrCo").style.display = "none";
+			document.getElementById("pacAl").style.display = "none";
+			document.getElementById("pacBa").style.display = "none";
+			document.getElementById("pacCa").style.display = "none";
+			document.getElementById("pacCo").style.display = "none";
+		}
+		function vistaHome(){
+			ocultarTodo(); document.getElementById("imglogo").style.display = "block"; document.getElementById("titulo").innerHTML = "ConsulTEC";
+		}
+		function usrAl() {
+			ocultarTodo(); document.getElementById("usrAl").style.display = "block"; document.getElementById("titulo").innerHTML = "Usuarios";
+		}
+		function usrBa() {
+			ocultarTodo(); document.getElementById("usrBa").style.display = "block"; document.getElementById("titulo").innerHTML = "Usuarios";
+		}
+		function usrCa() {
+			ocultarTodo(); document.getElementById("usrCa").style.display = "block"; document.getElementById("titulo").innerHTML = "Usuarios";
+		}
+		function usrCo() {
+			ocultarTodo(); document.getElementById("usrCo").style.display = "block"; document.getElementById("titulo").innerHTML = "Usuarios";
+		}
+		function pacAl() {
+			ocultarTodo(); document.getElementById("pacAl").style.display = "block"; document.getElementById("titulo").innerHTML = "Pacientes";
+		}
+		function pacBa() {
+			ocultarTodo(); document.getElementById("pacBa").style.display = "block"; document.getElementById("titulo").innerHTML = "Pacientes";
+		}
+		function pacCa() {
+			ocultarTodo(); document.getElementById("pacCa").style.display = "block"; document.getElementById("titulo").innerHTML = "Pacientes";
+		}
+		function pacCo() {
+			ocultarTodo(); document.getElementById("pacCo").style.display = "block"; document.getElementById("titulo").innerHTML = "Pacientes";
+		}
+		function hisAl() {
+			ocultarTodo(); document.getElementById("titulo").innerHTML = "Historial";
+		}
+		function hisBa() {
+			ocultarTodo(); document.getElementById("titulo").innerHTML = "Historial";
+		}
+		function hisCa() {
+			ocultarTodo(); document.getElementById("titulo").innerHTML = "Historial";
+		}
+		function hisCo() {
+			ocultarTodo(); document.getElementById("titulo").innerHTML = "Historial";
+		}
+		function citAl() {
+			ocultarTodo(); document.getElementById("titulo").innerHTML = "Citas";
+		}
+		function citBa() {
+			ocultarTodo(); document.getElementById("titulo").innerHTML = "Citas";
+		}
+		function citCa() {
+			ocultarTodo(); document.getElementById("titulo").innerHTML = "Citas";
+		}
+		function citCo() {
+			ocultarTodo(); document.getElementById("titulo").innerHTML = "Citas";
+		}
+		function vistaConfiguracion(){
+			ocultarTodo(); document.getElementById("vistaConfiguracion").style.display = "block"; document.getElementById("titulo").innerHTML = "Configuración";
+		}
+	</script>
+	<link rel="stylesheet" type="text/css" href="estail.css">
+	<!--<style></style>-->
+	<title></title>
+</head>
+<body>
+<div class="header">
+	<div id="titulo">ConsulTEC</div>
+	<div onclick="vistaHome()"><img src="home.png" class="homeLogo"></div>
+	
+	<div id="btnM1" class="opciones" onclick="vistaUsuario()">Usuario</div>
+	<div class="menuUsuario"><center><div class="altas" onclick="usrAl()">Altas</div><div class="bajas" onclick="usrBa()">Bajas</div><div class="cambios" onclick="usrCa()">Cambios</div><div class="consultas" onclick="usrCo()">Consultas</div></center></div>
+
+	<div id="btnM2" class="opciones" onclick="vistaPaciente()">Paciente</div>
+	<div class="menuPaciente"><center><div class="altas" onclick="pacAl()">Altas</div><div class="bajas" onclick="pacBa()">Bajas</div><div class="cambios" onclick="pacCa()">Cambios</div><div class="consultas" onclick="pacCo()">Consultas</div></center></div>
+
+	<div id="btnM3" class="opciones" onclick="vistaHistorial()">Historial</div>
+	<div class="menuHistorial"><center><div class="altas" onclick="hisAl()">Altas</div><div class="bajas" onclick="hisBa()">Bajas</div><div class="cambios" onclick="hisCa()">Cambios</div><div class="consultas" onclick="hisCo()">Consultas</div></center></div>
+
+	<div id="btnM4" class="opciones" onclick="vistaCitas()">Citas</div>
+	<div class="menuCitas"><center><div class="altas" onclick="citAl()">Altas</div><div class="bajas" onclick="citBa()">Bajas</div><div class="cambios" onclick="citCa()">Cambios</div><div class="consultas" onclick="citCo()">Consultas</div></center></div>
+
+	<div id="btnM5" class="opciones"></div>
+	<div id="imgConfig" onclick="vistaConfiguracion()"><img src="conf.png" class="confLogo"></div>
+</div>
+<div id="cuerpo">
+<img src="logo.png" class="imglogo" id="imglogo">
+<form id="usrAl">
+	<center><div class="tituloDeForm">Agregar Usuario</div></center>
+	<div class="nombreUsrAl">Nombre:</div><input type="text" name="nombreUsr" class="cajaUsrAl1">
+	<div class="contraUsrAl">Contraseña:</div><input type="text" name="contraUsr" class="cajaUsrAl2">
+	<div class="tipoUsrAl">Tipo de Usuario:</div><select name="tipo" class="comboUsrAl">
+  		<option value="null" selected> - - </option>
+  		<option value="admin">Administrador</option>
+  		<option value="dr">Doctor</option>
+  		<option value="secr">Secretario</option>
+	</select>
+	<img src="agregar.jpg" class="btnAgregarUsrAl">
+	<img src="limpiar.jpg" class="btnLimpiarUsrAl">
+</form>
+<form id="usrBa">
+	
+</form>
+<form id="usrCa">
+	
+</form>
+<form id="usrCo">
+	
+</form>
+<form id="pacAl">
+	
+</form>
+<form id="pacBa">
+	
+</form>
+<form id="pacCa">
+	
+</form>
+<form id="pacCo">
+	
+</form>
+<form id="vistaConfiguracion"></form>
+</div>
+<div class="footer">
+	<div id="nombreDr">Dra. Angélica Hernández</div>
+	<div id="nombreConsultorio">Consultorio HRNDZ</div>
+	<div id="usuario">Usuario:<br>Secretaria Cesar</div>
+	<div id="imgUsuario"><img src="user.png" class="usrLogo"></div>
+</div>
+</body>
+</html>

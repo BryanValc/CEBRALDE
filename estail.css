@@ -1,0 +1,76 @@
+*{ margin: 0; padding: 0; }
+.header{ position: fixed; width: 100%; height: 13%; background-color: #1060D2; z-index: -1; }
+.footer{ position: fixed; margin-top: 41.5%;  width: 100%; height: 200px; background-color: #1060D2; z-index: -1; }
+.imglogo{ position: absolute; z-index: -6; height: 55%; width: auto; margin-left: 35%; margin-top: 10%; }
+.opciones{ position: absolute; margin-top: 1.75%; font-size: 150%; font-family: Arial; }
+.opciones:hover{ color: white; }
+#btnM1{margin-left: 50%; cursor: pointer;} 
+#btnM2{margin-left: 61%; cursor: pointer;} 
+#btnM3{margin-left: 72%; cursor: pointer;} 
+#btnM4{margin-left: 83%; cursor: pointer;} 
+#btnM5{margin-left: 94%; cursor: pointer;}
+#titulo{position: absolute; font-family: "Permanent Marker"; color: #35B27D; font-size: 350%; padding-left: 5%; text-shadow: -5px -5px #000; margin: 0.4%;}
+#nombreDr{ position: absolute; margin-left: 3%; font-size: 145%; margin-top: 1.5%; font-family: Arial; }
+#nombreConsultorio{ position: absolute; margin-left: 3%; font-size: 145%; margin-top: 4%; font-family: Arial; }
+#usuario{ position: absolute; margin-left: 75%; font-size: 145%; margin-top: 1.5%; font-family: Arial; }
+.usrLogo{ position: absolute; margin-left: 92%; margin-top: 1.2%; height: 30%; width: auto; }
+.confLogo{ position: absolute; margin-left: 93%; margin-top: 1.2%; height: 55%; width: auto; }
+.homeLogo{ position: absolute; margin-left: 42%; margin-top: 1.2%; height: 55%; width: auto; }
+.usrLogo:hover{opacity: 0.4; cursor: pointer;}
+.confLogo:hover{opacity: 0.4; cursor: pointer;}
+.homeLogo:hover{opacity: 0.4; cursor: pointer;}
+/* ELEMENTOS Y ANIMACIÓN DE LOS MENÚS DE ELECCIÓN */
+.menuUsuario{ display: none; position: absolute; z-index: -5; background-color: #1060D2; font-family: Arial; margin-left: 49.5%; margin-top: 2%; color: white; padding: 0.7%; padding-top: 5%; font-size: 110%; animation-name: desplegarMenu; animation-duration: 0.5s; }
+.menuPaciente{ display: none; position: absolute; z-index: -5; background-color: #1060D2; font-family: Arial; margin-left: 60.7%; margin-top: 2%; color: white; padding: 0.7%; padding-top: 5%; font-size: 110%; animation-name: desplegarMenu; animation-duration: 0.5s; }
+.menuHistorial{ display: none; position: absolute; z-index: -5; background-color: #1060D2; font-family: Arial; margin-left: 71.6%; margin-top: 2%; color: white; padding: 0.7%; padding-top: 5%; font-size: 110%; animation-name: desplegarMenu; animation-duration: 0.5s; }
+.menuCitas{ display: none; position: absolute; z-index: -5; background-color: #1060D2; font-family: Arial; margin-left: 81.5%; margin-top: 2%; color: white; padding: 0.7%; padding-top: 5%; font-size: 110%; animation-name: desplegarMenu; animation-duration: 0.5s; }
+.altas{padding: 5%;}
+.altas:hover{background-color: #4393F5; cursor: pointer;}
+.bajas{padding: 5%;}
+.bajas:hover{background-color: #4393F5; cursor: pointer;}
+.cambios{padding: 5%;}
+.cambios:hover{background-color: #4393F5; cursor: pointer;}
+.consultas{padding: 5%;}
+.consultas:hover{background-color: #4393F5; cursor: pointer;}
+#btnM1:hover ~ .menuUsuario{display: block;}
+.menuUsuario:hover{display: block;}
+#btnM2:hover ~ .menuPaciente{display: block;}
+.menuPaciente:hover{display: block;}
+#btnM3:hover ~ .menuHistorial{display: block;}
+.menuHistorial:hover{display: block;}
+#btnM4:hover ~ .menuCitas{display: block;}
+.menuCitas:hover{display: block;}
+@keyframes desplegarMenu{
+	from{margin-top: -4%;}
+	to{margin-top: 2%;}
+}
+/* VALORES DEFAULT DE LOS ELEMENTOS DE LOS FORMULARIOS */
+#usrAl{display: none;}
+#usrCa{display: none;}
+#usrCo{display: none;}
+#usrBa{display: none;}
+#pacAl{display: none;}
+#pacBa{display: none;}
+#pacCa{display: none;}
+#pacCo{display: none;}
+#vistaConfiguracion{display: none;}
+/* ELEMENTOS DE LOS FORMULARIOS*/
+.tituloDeForm{position: absolute; font-size: 200%; margin-top: 9%; margin-left: 42%; font-family: Arial; font-weight: bold; z-index: -6;}
+/* ALTAS DE USUARIO */
+.cajaUsrAl1{position: absolute; margin-top: 15%; margin-left: 22%;  width: 30%; height: 6%; font-size: 150%; z-index: -6; background-color: #ddd}
+.cajaUsrAl2{position: absolute; margin-top: 23%; margin-left: 22%;  width: 30%; height: 6%; font-size: 150%; z-index: -6; background-color: #ddd}
+.comboUsrAl{position: absolute; margin-top: 31%; margin-left: 22%;  width: 24%; height: 6%; font-size: 110%; z-index: -6;}
+.nombreUsrAl{position: absolute; margin-left: 6%; margin-top: 15.5%; font-size: 145%; font-family: Arial; z-index: -6;}
+.contraUsrAl{position: absolute; margin-left: 6%; margin-top: 23.5%; font-size: 145%; font-family: Arial; z-index: -6;}
+.tipoUsrAl{position: absolute;  margin-left: 6%; margin-top: 31.5%; font-size: 145%; font-family: Arial; z-index: -6;}
+.btnAgregarUsrAl{position: absolute; width: 7%; height: auto; margin-top: 16%; margin-left: 64%; z-index: -6; cursor: pointer;}
+.btnLimpiarUsrAl{position: absolute; width: 7%; height: auto; margin-top: 24%; margin-left: 64%; z-index: -6; cursor: pointer;}
+.btnAgregarUsrAl:hover{opacity: 0.45;}
+.btnLimpiarUsrAl:hover{opacity: 0.45;}
+/* BAJAS DE USUARIO */
+/* CAMBIOS DE USUARIO */
+/* CONSULTAS DE USUARIO */
+/* ALTAS DE PACIENTE */
+/* BAJAS DE PACIENTE */
+/* CAMBIOS DE PACIENTE */
+/* CONSULTAS DE PACIENTE */
